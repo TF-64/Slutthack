@@ -1,0 +1,19 @@
+[
+  {
+    "modid": "Slutthack",
+    "name": "Slutthack",
+    "description": "asdsd",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "toster96",
+      "srcgod"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
