@@ -1,8 +1,7 @@
-package com.srcgod.slutthack;
+package com.srcgod.slutthack.impl;
 
-import com.srcgod.slutthack.keys.key;
-import com.srcgod.slutthack.ui.ui;
-import net.minecraft.init.Blocks;
+import com.srcgod.slutthack.api.event.keys.key;
+import com.srcgod.slutthack.api.event.ui.ui;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -31,9 +30,6 @@ public class Slutt
     public void init(FMLInitializationEvent event)
     {
         Client.startup();
-        logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
-        MinecraftForge.EVENT_BUS.register(new key());
-        MinecraftForge.EVENT_BUS.register(new ui());
     }
 }
 //;3
