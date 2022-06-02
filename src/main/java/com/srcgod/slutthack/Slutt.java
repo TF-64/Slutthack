@@ -1,6 +1,7 @@
 package com.srcgod.slutthack;
 
 import com.srcgod.slutthack.keys.key;
+import com.srcgod.slutthack.ui.ui;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -32,7 +33,7 @@ public class Slutt
         Client.startup();
         logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
         MinecraftForge.EVENT_BUS.register(new key());
-
+        MinecraftForge.EVENT_BUS.register(new ui());
     }
 }
 //;3

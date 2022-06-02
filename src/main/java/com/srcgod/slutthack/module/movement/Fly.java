@@ -1,4 +1,4 @@
-package com.srcgod.slutthack.module.MOVEMENT;
+package com.srcgod.slutthack.module.movement;
 import com.srcgod.slutthack.module.Module;
 import org.lwjgl.input.Keyboard;
 

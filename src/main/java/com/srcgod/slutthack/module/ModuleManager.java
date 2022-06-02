@@ -1,7 +1,7 @@
 package com.srcgod.slutthack.module;
 
 import com.srcgod.slutthack.Client;
-import com.srcgod.slutthack.module.MOVEMENT.Fly;
+import com.srcgod.slutthack.module.movement.Fly;
 
 public class ModuleManager {
 
