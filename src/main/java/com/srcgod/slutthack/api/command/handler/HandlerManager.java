@@ -1,8 +1,8 @@
-package com.srcgod.slutthack.api.handler;
+package com.srcgod.slutthack.api.command.handler;
 
-import com.srcgod.slutthack.api.handler.handlers.CommandHandler;
-import com.srcgod.slutthack.api.handler.handlers.KeyHandler;
-import com.srcgod.slutthack.api.handler.handlers.UIHandler;
+import com.srcgod.slutthack.api.command.handler.handlers.CommandHandler;
+import com.srcgod.slutthack.api.command.handler.handlers.KeyHandler;
+import com.srcgod.slutthack.api.command.handler.handlers.UIHandler;
 import net.minecraftforge.common.MinecraftForge;
 
 public class HandlerManager {

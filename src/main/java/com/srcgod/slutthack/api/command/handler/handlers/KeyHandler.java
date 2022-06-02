@@ -1,4 +1,4 @@
-package com.srcgod.slutthack.api.handler.handlers;
+package com.srcgod.slutthack.api.command.handler.handlers;
 
 import com.srcgod.slutthack.impl.Client;
 import net.minecraft.client.Minecraft;
