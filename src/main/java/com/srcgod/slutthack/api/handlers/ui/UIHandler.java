@@ -1,4 +1,4 @@
-package com.srcgod.slutthack.api.event.ui;
+package com.srcgod.slutthack.api.handlers.ui;
 
 import com.srcgod.slutthack.impl.Client;
 import com.srcgod.slutthack.api.module.Module;
@@ -18,7 +18,7 @@ import net.minecraft.util.text.TextFormatting;
 //}
 
 
-public class ui {
+public class UIHandler {
     @SubscribeEvent
     public void onRender(RenderGameOverlayEvent.Post e) {
         if (e.getType() == RenderGameOverlayEvent.ElementType.TEXT) {

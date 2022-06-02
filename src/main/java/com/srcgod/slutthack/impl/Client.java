@@ -1,9 +1,7 @@
 package com.srcgod.slutthack.impl;
 
-import com.srcgod.slutthack.api.event.EventManager;
+import com.srcgod.slutthack.api.handlers.HandlerManager;
 import com.srcgod.slutthack.api.module.ModuleManager;
-import net.minecraft.client.Minecraft;
-import net.minecraftforge.common.MinecraftForge;
 import org.lwjgl.opengl.Display;
 
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -19,7 +17,7 @@ public class Client {
         Display.setTitle(name);
 
         ModuleManager.init();
-        EventManager.init();
+        HandlerManager.init();
     }
 
 

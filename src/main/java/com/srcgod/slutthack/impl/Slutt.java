@@ -1,8 +1,5 @@
 package com.srcgod.slutthack.impl;
 
-import com.srcgod.slutthack.api.event.keys.key;
-import com.srcgod.slutthack.api.event.ui.ui;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
