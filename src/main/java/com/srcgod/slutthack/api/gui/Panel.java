@@ -80,7 +80,7 @@ public class Panel implements Minecraftable {
         }
 
         if (extended) {
-            for (com.srcgod.slutthack.api.gui.Button button : buttons) {
+            for (Button button : buttons) {
                 button.mouseClicked(mouseX, mouseY, mouseButton);
             }
         }
