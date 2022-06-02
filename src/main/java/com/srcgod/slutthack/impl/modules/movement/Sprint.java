@@ -5,7 +5,7 @@ import org.lwjgl.input.Keyboard;
 
 public class Sprint extends Module {
     public Sprint() {
-        super("Sprint", Keyboard.KEY_R, Category.MOVEMENT);
+        super("Sprint", Keyboard.KEY_NONE, Category.MOVEMENT);
     }
 
     @Override

@@ -3,6 +3,7 @@ package com.srcgod.slutthack.api.module;
 import com.srcgod.slutthack.impl.Client;
 import com.srcgod.slutthack.impl.modules.combat.TriggerBot;
 import com.srcgod.slutthack.impl.modules.movement.Fly;
+import com.srcgod.slutthack.impl.modules.movement.Sprint;
 import com.srcgod.slutthack.impl.modules.player.Blockreach;
 import com.srcgod.slutthack.impl.modules.player.FakeCreative;
 import com.srcgod.slutthack.impl.modules.render.GlowESP;
@@ -12,6 +13,7 @@ public class ModuleManager {
 
     public static void init() {
         register(new Fly());
+        register(new Sprint());
         register(new Blockreach());
         register(new TriggerBot());
         register(new GlowESP());
