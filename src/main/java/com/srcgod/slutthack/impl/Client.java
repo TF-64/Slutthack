@@ -2,7 +2,7 @@ package com.srcgod.slutthack.impl;
 
 import com.srcgod.slutthack.api.handler.HandlerManager;
 import com.srcgod.slutthack.api.module.ModuleManager;
-import me.toster96.clickgui.ClickGuiScreen;
+import com.srcgod.slutthack.api.gui.ClickGuiScreen;
 import org.lwjgl.opengl.Display;
 
 import java.util.concurrent.CopyOnWriteArrayList;

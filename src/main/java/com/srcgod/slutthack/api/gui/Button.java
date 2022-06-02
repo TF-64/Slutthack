@@ -1,6 +1,7 @@
-package me.toster96.clickgui;
+package com.srcgod.slutthack.api.gui;
 
 import com.srcgod.slutthack.api.module.Module;
+import com.srcgod.slutthack.api.util.utils.HoverUtil;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import org.lwjgl.input.Keyboard;
@@ -40,7 +41,7 @@ public class Button {
     }
 
     public void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException {
-        if (HoverUtils.hovered(mouseX, mouseY, x, y, x + width, y + height)) {
+        if (HoverUtil.hovered(mouseX, mouseY, x, y, x + width, y + height)) {
             if (mouseButton == 0) {
                 module.toggle();
             } else if (mouseButton == 2) {

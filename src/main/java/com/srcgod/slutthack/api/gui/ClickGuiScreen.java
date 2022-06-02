@@ -1,4 +1,4 @@
-package me.toster96.clickgui;
+package com.srcgod.slutthack.api.gui;
 
 import com.srcgod.slutthack.api.module.Module;
 import net.minecraft.client.gui.GuiScreen;
