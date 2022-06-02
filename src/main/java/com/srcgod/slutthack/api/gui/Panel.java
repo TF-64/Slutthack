@@ -1,5 +1,6 @@
-package me.toster96.clickgui;
+package com.srcgod.slutthack.api.gui;
 
+import com.srcgod.slutthack.api.util.utils.HoverUtil;
 import com.srcgod.slutthack.api.module.Module;
 import com.srcgod.slutthack.impl.Client;
 import net.minecraft.client.Minecraft;
@@ -17,7 +18,7 @@ public class Panel {
     public boolean extended, dragging;
     public Module.Category category;
 
-    public List<Button> buttons = new ArrayList<>();
+    public List<com.srcgod.slutthack.api.gui.Button> buttons = new ArrayList<>();
 
     public Panel(int x, int y, int width, int height, Module.Category category) {
         this.x = x;
@@ -30,7 +31,7 @@ public class Panel {
 
         for (Module module : Client.modules) {
             if (module.category == category) {
-                buttons.add(new Button(x, y1, width, height, module));
+                buttons.add(new com.srcgod.slutthack.api.gui.Button(x, y1, width, height, module));
                 y1 += height;
             }
         }
@@ -47,7 +48,7 @@ public class Panel {
 
         if (extended) {
             int y1 = y + height;
-            for (Button button : buttons) {
+            for (com.srcgod.slutthack.api.gui.Button button : buttons) {
                 button.x = x;
                 button.y = y1;
 
@@ -60,14 +61,14 @@ public class Panel {
 
     protected void keyTyped(char typedChar, int keyCode) throws IOException {
         if (extended) {
-            for (Button button : buttons) {
+            for (com.srcgod.slutthack.api.gui.Button button : buttons) {
                 button.keyTyped(typedChar, keyCode);
             }
         }
     }
 
     public void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException {
-        if (HoverUtils.hovered(mouseX, mouseY, x, y, x + width, y + height)) {
+        if (HoverUtil.hovered(mouseX, mouseY, x, y, x + width, y + height)) {
             if (mouseButton == 0) {
                 dragX = mouseX - x;
                 dragY = mouseY - y;
@@ -78,7 +79,7 @@ public class Panel {
         }
 
         if (extended) {
-            for (Button button : buttons) {
+            for (com.srcgod.slutthack.api.gui.Button button : buttons) {
                 button.mouseClicked(mouseX, mouseY, mouseButton);
             }
         }
