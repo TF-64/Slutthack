@@ -1,5 +1,6 @@
 package com.srcgod.slutthack.api.gui;
 
+import com.srcgod.slutthack.api.util.Minecraftable;
 import com.srcgod.slutthack.api.util.utils.HoverUtil;
 import com.srcgod.slutthack.api.module.Module;
 import com.srcgod.slutthack.impl.Client;
@@ -11,8 +12,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Panel {
-    public Minecraft mc = Minecraft.getMinecraft();
+public class Panel implements Minecraftable {
+
 
     public int x, y, width, height, dragY, dragX;
     public boolean extended, dragging;
