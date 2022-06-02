@@ -17,7 +17,7 @@ public class Client {
         Display.setTitle(name);
 
         ModuleManager.init();
-        HandlerManager.INSTANCE.init();
+        HandlerManager.init();
     }
 
 

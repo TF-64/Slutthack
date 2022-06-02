@@ -8,14 +8,14 @@ import net.minecraftforge.common.MinecraftForge;
 public class HandlerManager {
     public static HandlerManager INSTANCE;
 
-    public void init() {
+    public static void init() {
         register(new KeyHandler());
         register(new UIHandler());
         register(new CommandHandler());
 
     }
 
-    private void register(Object handler) {
+    private static void register(Object handler) {
         MinecraftForge.EVENT_BUS.register(handler);
     }
 }
