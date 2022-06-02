@@ -1,4 +1,4 @@
-package com.srcgod.slutthack.api.handlers.keys;
+package com.srcgod.slutthack.api.handler.handlers;
 
 import com.srcgod.slutthack.impl.Client;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;

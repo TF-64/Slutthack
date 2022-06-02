@@ -1,6 +1,6 @@
 package com.srcgod.slutthack.impl;
 
-import com.srcgod.slutthack.api.handlers.HandlerManager;
+import com.srcgod.slutthack.api.handler.HandlerManager;
 import com.srcgod.slutthack.api.module.ModuleManager;
 import org.lwjgl.opengl.Display;
 
@@ -17,7 +17,7 @@ public class Client {
         Display.setTitle(name);
 
         ModuleManager.init();
-        HandlerManager.init();
+        HandlerManager.INSTANCE.init();
     }
 
 

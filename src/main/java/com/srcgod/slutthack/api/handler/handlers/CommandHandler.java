@@ -1,4 +1,4 @@
-package com.srcgod.slutthack.api.handlers.command;
+package com.srcgod.slutthack.api.handler.handlers;
 
 import com.srcgod.slutthack.api.util.Minecraftable;
 import com.srcgod.slutthack.api.util.utils.MessageUtil;
