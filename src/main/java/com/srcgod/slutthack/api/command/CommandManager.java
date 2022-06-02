@@ -15,9 +15,13 @@ public class CommandManager implements Minecraftable {
 
     }
 
+    private static void register(Object command) {
+        commands.add((Command) command);
+    }
+
     public static CommandManager INSTANCE;
 
-    private final List<Command> commands = new ArrayList<>();
+    private static final List<Command> commands = new ArrayList<>();
     private String clientMessage = "Aurora";
     private String prefix = ";";
 

@@ -25,5 +25,3 @@ public class Client {
         for (Module m : modules) if (m.getKey() == key) m.toggle();
     }
 }
-
-//чо?
