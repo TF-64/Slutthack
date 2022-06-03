@@ -1,11 +1,11 @@
 package com.srcgod.slutthack.api.clickgui.component.components.sub;
 
+import com.srcgod.slutthack.api.clickgui.component.components.Button;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import com.srcgod.slutthack.api.clickgui.component.Component;
-import com.srcgod.slutthack.api.clickgui.component.components.Button;
 
 public class Keybind extends Component {
 

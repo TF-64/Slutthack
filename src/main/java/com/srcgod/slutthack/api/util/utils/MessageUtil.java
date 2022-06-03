@@ -12,7 +12,7 @@ public class MessageUtil implements Minecraftable {
     public static MessageUtil INSTANCE;
 
     public static void sendMessage(String msg) {
-        sendClientMessage("[" + ChatFormatting.LIGHT_PURPLE + Client.name + ChatFormatting.WHITE + "hack] " + msg);
+        sendClientMessage("[" + ChatFormatting.LIGHT_PURPLE + Client.name + ChatFormatting.WHITE + "] " + msg);
     }
 
     public static void sendClientMessage(String message) {

@@ -3,13 +3,12 @@ package com.srcgod.slutthack.api.clickgui.component;
 import java.awt.Color;
 import java.util.ArrayList;
 
+import com.srcgod.slutthack.api.clickgui.component.components.Button;
 import com.srcgod.slutthack.api.module.Module;
 import com.srcgod.slutthack.impl.Client;
-import com.srcgod.slutthack.api.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.*;
-import com.srcgod.slutthack.api.clickgui.component.components.Button;
 
 public class Frame {
 
@@ -28,11 +27,11 @@ public class Frame {
 	public Frame(Module.Category cat) {
 		this.components = new ArrayList<Component>();
 		this.category = cat;
-		this.width = 88;
+		this.width = 90;
 		this.x = 0;
 		this.y = 60;
 		this.dragX = 0;
-		this.barHeight = 12;
+		this.barHeight = 15;
 		this.open = false;
 		this.isDragging = false;
 		int tY = this.barHeight;
@@ -70,7 +69,7 @@ public class Frame {
 	
 	public void renderFrame(FontRenderer fontRenderer) {
 		Gui.drawRect(this.x, this.y-1, this.x + this.width, this.y, new Color(0xEB06F3).hashCode());
-		Gui.drawRect(this.x, this.y, this.x + this.width, this.y + 12, new Color(0xF300E4).hashCode());
+		Gui.drawRect(this.x, this.y, this.x + this.width, this.y + 12, new Color(0xEB06F3).hashCode());
 		Minecraft.getMinecraft().fontRenderer.drawStringWithShadow(this.category.name(), this.x + 5, this.y + 2, -1);
 
 		if(this.open) {

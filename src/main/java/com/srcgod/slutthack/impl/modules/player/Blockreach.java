@@ -8,8 +8,6 @@ import net.minecraft.entity.ai.attributes.IAttributeInstance;
 import net.minecraft.entity.player.EntityPlayer;
 import org.lwjgl.input.Keyboard;
 
-import java.util.ArrayList;
-
 public class Blockreach extends Module {
 
     public Blockreach() {

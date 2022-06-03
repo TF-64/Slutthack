@@ -2,8 +2,6 @@ package com.srcgod.slutthack.api.command;
 
 import com.srcgod.slutthack.api.util.Minecraftable;
 import com.srcgod.slutthack.api.util.utils.MessageUtil;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

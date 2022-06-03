@@ -4,7 +4,6 @@ import com.srcgod.slutthack.api.clickgui.ClickGuiManager;
 import com.srcgod.slutthack.api.command.handler.HandlerManager;
 import com.srcgod.slutthack.api.font.FontUtils;
 import com.srcgod.slutthack.api.module.ModuleManager;
-import com.srcgod.slutthack.api.clickgui.*;
 import net.minecraft.util.text.TextFormatting;
 import org.lwjgl.opengl.Display;
 

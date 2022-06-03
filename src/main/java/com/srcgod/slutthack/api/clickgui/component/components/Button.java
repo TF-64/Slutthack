@@ -3,10 +3,10 @@ package com.srcgod.slutthack.api.clickgui.component.components;
 import java.awt.*;
 import java.util.ArrayList;
 
-import com.srcgod.slutthack.impl.Slutt;
-import com.srcgod.slutthack.impl.Client;
-import com.srcgod.slutthack.api.module.Module;
 import com.srcgod.slutthack.api.clickgui.Setting;
+import com.srcgod.slutthack.api.clickgui.component.components.sub.Slider;
+import com.srcgod.slutthack.api.module.Module;
+import com.srcgod.slutthack.impl.Slutt;
 import com.srcgod.slutthack.api.clickgui.component.Component;
 import com.srcgod.slutthack.api.clickgui.component.Frame;
 import com.srcgod.slutthack.api.clickgui.component.components.sub.Checkbox;
@@ -15,7 +15,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.Gui;
 import com.srcgod.slutthack.api.clickgui.component.components.sub.ModeButton;
-import com.srcgod.slutthack.api.clickgui.component.components.sub.Slider;
 import net.minecraft.util.text.TextFormatting;
 
 public class Button extends Component {

@@ -1,12 +1,13 @@
 package com.srcgod.slutthack.api.clickgui.component.components.sub;
 
 import java.awt.Color;
+
+import com.srcgod.slutthack.api.clickgui.Setting;
+import com.srcgod.slutthack.api.clickgui.component.components.Button;
 import org.lwjgl.opengl.GL11;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
-import com.srcgod.slutthack.api.clickgui.Setting;
 import com.srcgod.slutthack.api.clickgui.component.Component;
-import com.srcgod.slutthack.api.clickgui.component.components.Button;
 
 public class Checkbox extends Component {
 
@@ -29,13 +30,13 @@ public class Checkbox extends Component {
 	public void renderComponent() {
 		Gui.drawRect(parent.parent.getX(), parent.parent.getY() + offset, parent.parent.getX() + (parent.parent.getWidth() * 1), parent.parent.getY() + offset + 12, this.hovered ? 0xFF222222 : 0xFF111111);
 		GL11.glPushMatrix();
-		GL11.glScalef(0.5f, 0.5f, 0.5f);
+		GL11.glScalef(0.6f, 0.6f, 0.6f);
 		Minecraft.getMinecraft().fontRenderer.drawStringWithShadow(this.op.getName(), (parent.parent.getX() + 10 + 4) * 2 + 5, (parent.parent.getY() + offset + 2) * 2 + 4, -1);
 		GL11.glPopMatrix();
 		if (this.op.getValBoolean()) {
-			Gui.drawRect(parent.parent.getX() + 4 + 4, parent.parent.getY() + offset + 4, parent.parent.getX() + 8 + 4, parent.parent.getY() + offset + 8,new Color(0x36D003).hashCode());
+			Gui.drawRect(parent.parent.getX() + 4 + 4, parent.parent.getY() + offset + 4, parent.parent.getX() + 8 + 4, parent.parent.getY() + offset + 8,new Color(0xF300E4).hashCode());
 		} else {
-			Gui.drawRect(parent.parent.getX() + 4 + 4, parent.parent.getY() + offset + 4, parent.parent.getX() + 8 + 4, parent.parent.getY() + offset + 8, new Color(0x36D003).hashCode());
+			Gui.drawRect(parent.parent.getX() + 4 + 4, parent.parent.getY() + offset + 4, parent.parent.getX() + 8 + 4, parent.parent.getY() + offset + 8, new Color(0xFF00D7).hashCode());
 			Gui.drawRect(parent.parent.getX() + 5 + 4, parent.parent.getY() + offset + 5, parent.parent.getX() + 7 + 4, parent.parent.getY() + offset + 7, new Color(0xFF222222).hashCode());
 		}
 	}

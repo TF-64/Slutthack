@@ -4,10 +4,10 @@ import java.awt.Color;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+import com.srcgod.slutthack.api.clickgui.Setting;
 import org.lwjgl.opengl.GL11;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
-import com.srcgod.slutthack.api.clickgui.Setting;
 import com.srcgod.slutthack.api.clickgui.component.Component;
 import com.srcgod.slutthack.api.clickgui.component.components.Button;
 
@@ -38,9 +38,9 @@ public class Slider extends Component {
 		final int drag = (int)(this.set.getValDouble() / this.set.getMax() * this.parent.parent.getWidth());
 		Gui.drawRect(parent.parent.getX(), parent.parent.getY() + offset, parent.parent.getX(), parent.parent.getY() + offset + 12, 0xFF111111);
 		Gui.drawRect(parent.parent.getX(), parent.parent.getY() + offset + 8, parent.parent.getX() + 88, parent.parent.getY() + offset + 12, Color.GRAY.darker().darker().darker().getRGB());
-		Gui.drawRect(parent.parent.getX(), parent.parent.getY() + offset + 8, parent.parent.getX() + (int) renderWidth, parent.parent.getY() + offset + 12,hovered ? new Color(0x36D003).hashCode() : new Color(0x34E800).hashCode());
+		Gui.drawRect(parent.parent.getX(), parent.parent.getY() + offset + 8, parent.parent.getX() + (int) renderWidth, parent.parent.getY() + offset + 12,hovered ? new Color(0xCB02F8).hashCode() : new Color(0x34E800).hashCode());
 		GL11.glPushMatrix();
-		GL11.glScalef(0.5f,0.5f, 0.5f);
+		GL11.glScalef(0.6f,0.6f, 0.6f);
 		Minecraft.getMinecraft().fontRenderer.drawStringWithShadow(this.set.getName() + ": " + this.set.getValDouble() , (parent.parent.getX()* 2 + 15), (parent.parent.getY() + offset - 1) * 2 + 5, -1);
 
 		GL11.glPopMatrix();

@@ -3,13 +3,10 @@ package com.srcgod.slutthack.api.clickgui;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import com.srcgod.slutthack.api.module.Module.*;
 import com.srcgod.slutthack.api.clickgui.component.Frame;
 import com.srcgod.slutthack.api.module.Module;
 import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.util.ResourceLocation;
 import com.srcgod.slutthack.api.clickgui.component.Component;
-import com.srcgod.slutthack.api.clickgui.component.Frame;
 
 
 public class ClickGuiManager extends GuiScreen {

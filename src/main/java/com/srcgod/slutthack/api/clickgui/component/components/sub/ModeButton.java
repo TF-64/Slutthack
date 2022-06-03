@@ -1,13 +1,13 @@
 package com.srcgod.slutthack.api.clickgui.component.components.sub;
 
+import com.srcgod.slutthack.api.clickgui.Setting;
+import com.srcgod.slutthack.api.clickgui.component.components.Button;
 import com.srcgod.slutthack.api.module.Module;
 import org.lwjgl.opengl.GL11;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
-import com.srcgod.slutthack.api.clickgui.Setting;
 import com.srcgod.slutthack.api.clickgui.component.Component;
-import com.srcgod.slutthack.api.clickgui.component.components.Button;
 
 public class ModeButton extends Component {
 

@@ -5,17 +5,10 @@ import com.srcgod.slutthack.api.module.Module;
 import com.srcgod.slutthack.impl.Slutt;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
-import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.util.text.TextFormatting;
-import java.awt.*;
-import java.util.Objects;
-import static net.minecraft.client.gui.Gui.drawRect;
-import com.srcgod.slutthack.api.font.*;
-
-
 
 
 public class UIHandler {
