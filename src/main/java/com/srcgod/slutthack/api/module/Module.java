@@ -49,7 +49,9 @@ public class Module {
         return name;
     }
 
-
+    public String getName() {
+        return this.name;
+    }
 
 
     public enum Category {

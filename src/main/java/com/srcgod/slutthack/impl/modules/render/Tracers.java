@@ -21,7 +21,7 @@ public class Tracers extends Module {
 
         for (Entity playerEntity : mc.world.playerEntities) {
 
-            if (playerEntity != null) {
+            if (playerEntity != null && playerEntity != mc.player) {
 
                 RenderUtils.trace(mc, playerEntity, mc.getRenderPartialTicks(), 1);
 

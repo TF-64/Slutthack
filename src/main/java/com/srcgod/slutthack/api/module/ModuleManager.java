@@ -1,6 +1,7 @@
 package com.srcgod.slutthack.api.module;
 
 import com.srcgod.slutthack.impl.Client;
+import com.srcgod.slutthack.impl.modules.combat.KillAura;
 import com.srcgod.slutthack.impl.modules.combat.TriggerBot;
 import com.srcgod.slutthack.impl.modules.movement.Fly;
 import com.srcgod.slutthack.impl.modules.movement.Sprint;
@@ -19,6 +20,7 @@ public class ModuleManager {
         register(new GlowESP());
         register(new Tracers());
         register(new FakeCreative());
+        register(new KillAura());
     }
 
     private static void register(Module module) {

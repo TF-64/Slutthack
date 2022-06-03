@@ -1,5 +1,7 @@
 package com.srcgod.slutthack.impl;
 
+import com.srcgod.slutthack.api.clickgui.ClickGuiManager;
+import com.srcgod.slutthack.api.clickgui.SettingsManager;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -14,6 +16,10 @@ public class Slutt
     public static final String NAME = "Slutthack";
     public static final String VERSION = "0.1";
 
+    public static Slutt instance;
+    public SettingsManager settingsManager;
+    public ClickGuiManager clickGui;
+
     private static Logger logger;
 
     @EventHandler
@@ -26,7 +32,16 @@ public class Slutt
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
+        clickGui= new ClickGuiManager();
+        instance = this;
+        settingsManager = new SettingsManager();
+
         Client.startup();
+
     }
+
+
+
+
 }
 //;3

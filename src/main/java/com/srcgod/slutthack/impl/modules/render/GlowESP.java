@@ -17,6 +17,7 @@ public class GlowESP extends Module {
 
         super("GlowESP", Keyboard.KEY_NONE, Category.RENDER);
 
+        ArrayList<String> options = new ArrayList<>();
     }
 
     @SubscribeEvent
