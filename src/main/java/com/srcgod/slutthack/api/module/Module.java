@@ -4,11 +4,19 @@ import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
 
 public class Module {
-    public String name;
-    public boolean toggled;
+    protected String name;
+    boolean toggled;
     public int keyCode;
     public Category category;
     public Minecraft mc = Minecraft.getMinecraft();
+    String description;
+
+    public Module(String name, String description, int key, Category c) {
+        this.name = name;
+        this.description = description;
+        keyCode = key;
+        category = c;
+    }
 
     public Module(String name, int key, Category c) {
         this.name = name;
@@ -16,11 +24,10 @@ public class Module {
         category = c;
     }
 
+    public String getDescription() {return description;}
 
 
-    public boolean isEnabled() {
-        return toggled;
-    }
+
 
     public int getKey(){
         return keyCode;
@@ -45,12 +52,12 @@ public class Module {
         return category;
     }
 
-    public String gatName(){
+    public String getName(){
         return name;
     }
 
-    public String getName() {
-        return this.name;
+    public boolean isEnabled() {
+        return toggled;
     }
 
 

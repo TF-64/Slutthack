@@ -36,7 +36,7 @@ public class SettingsManager {
 	
 	public Setting getSettingByName(String mod, String name){
 		for(Setting set : getSettings()){
-			if(set.getName().equalsIgnoreCase(name) && Objects.equals(set.getParentMod().name, mod)){
+			if(set.getName().equalsIgnoreCase(name) && Objects.equals(set.getParentMod().getName(), mod)){
 				return set;
 			}
 		}

@@ -17,8 +17,7 @@ public class MessageUtil implements Minecraftable {
 
     public static void sendClientMessage(String message) {
         if (mc.player != null) {
-            final ITextComponent itc = new TextComponentString(message).setStyle(new Style().setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new TextComponentString("Easter egg"))));
-            mc.ingameGUI.getChatGUI().printChatMessageWithOptionalDeletion(itc, 6937);
+//            mc.player.sendChatMessage(message);
         }
     }
 }

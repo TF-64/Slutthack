@@ -1,5 +1,5 @@
 
-package com.srcgod.slutthack.api.command.handler.handlers;
+package com.srcgod.slutthack.api.handler.handlers;
 
 import com.srcgod.slutthack.impl.Client;
 import com.srcgod.slutthack.api.module.Module;
@@ -24,7 +24,7 @@ public class UIHandler {
             fr.drawString(TextFormatting.LIGHT_PURPLE + "Slutt" + TextFormatting.WHITE + " hack " + Slutt.VERSION, 5, 5, -1);
 
             for (Module m : Client.modules) if (m.isEnabled()) {
-                fr.drawStringWithShadow(m.name, sr.getScaledWidth() - 4 - fr.getStringWidth(m.name), y, -1);
+                fr.drawStringWithShadow(m.getName(), sr.getScaledWidth() - 4 - fr.getStringWidth(m.getName()), y, -1);
                 y += 10;
             }
         }
