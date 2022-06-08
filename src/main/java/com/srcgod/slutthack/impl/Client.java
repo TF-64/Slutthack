@@ -11,7 +11,7 @@ import com.srcgod.slutthack.api.module.Module;
 
 
 public class Client {
-    public static String name = "Slutthack 0.1";
+    public static String name = "Slutthack 1.7";
     public static CopyOnWriteArrayList<Module> modules = new CopyOnWriteArrayList<>();
 //    public static  clickGui;
 
