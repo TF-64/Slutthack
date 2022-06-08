@@ -30,7 +30,7 @@ public class Checkbox extends Component {
 	public void renderComponent() {
 		Gui.drawRect(parent.parent.getX(), parent.parent.getY() + offset, parent.parent.getX() + (parent.parent.getWidth() * 1), parent.parent.getY() + offset + 12, this.hovered ? 0xFF222222 : 0xFF111111);
 		GL11.glPushMatrix();
-		GL11.glScalef(0.6f, 0.6f, 0.6f);
+		GL11.glScalef(0.5f, 0.5f, 0.5f);
 		Minecraft.getMinecraft().fontRenderer.drawStringWithShadow(this.op.getName(), (parent.parent.getX() + 10 + 4) * 2 + 5, (parent.parent.getY() + offset + 2) * 2 + 4, -1);
 		GL11.glPopMatrix();
 		if (this.op.getValBoolean()) {

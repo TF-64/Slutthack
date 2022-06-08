@@ -67,7 +67,7 @@ public class Button extends Component {
 	@Override
 	public void renderComponent() {
 		Gui.drawRect(parent.getX(), this.parent.getY() + this.offset, parent.getX() + parent.getWidth(), this.parent.getY() + 12 + this.offset, this.isHovered ? 0xFF222222 : 0xFF111111);
-		Minecraft.getMinecraft().fontRenderer.drawStringWithShadow(this.mod.getName(), (parent.getX() + 5), (parent.getY() + offset + 2), this.mod.isEnabled() ? new Color(0xCB02F8).hashCode() : 0xFFFFFF); //0x999999
+		Minecraft.getMinecraft().fontRenderer.drawStringWithShadow(this.mod.getName(), (parent.getX() + 5), (parent.getY() + offset + 2), this.mod.isEnabled() ? new Color(0xF300E4).hashCode() : 0xFFFFFF); //0x999999
 		if(this.subcomponents.size() >= 2) {
 			Minecraft.getMinecraft().fontRenderer.drawStringWithShadow(this.open ?  TextFormatting.GRAY + "-" : "+", (parent.getX()+parent.getWidth()-10), (parent.getY() + offset + 2), -1);
 		}

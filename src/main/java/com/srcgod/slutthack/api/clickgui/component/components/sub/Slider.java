@@ -40,7 +40,7 @@ public class Slider extends Component {
 		Gui.drawRect(parent.parent.getX(), parent.parent.getY() + offset + 8, parent.parent.getX() + 88, parent.parent.getY() + offset + 12, Color.GRAY.darker().darker().darker().getRGB());
 		Gui.drawRect(parent.parent.getX(), parent.parent.getY() + offset + 8, parent.parent.getX() + (int) renderWidth, parent.parent.getY() + offset + 12,hovered ? new Color(0xCB02F8).hashCode() : new Color(0x34E800).hashCode());
 		GL11.glPushMatrix();
-		GL11.glScalef(0.6f,0.6f, 0.6f);
+		GL11.glScalef(0.5f,0.5f, 0.5f);
 		Minecraft.getMinecraft().fontRenderer.drawStringWithShadow(this.set.getName() + ": " + this.set.getValDouble() , (parent.parent.getX()* 2 + 15), (parent.parent.getY() + offset - 1) * 2 + 5, -1);
 
 		GL11.glPopMatrix();

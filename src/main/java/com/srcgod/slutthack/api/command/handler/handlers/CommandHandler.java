@@ -1,5 +1,5 @@
 package com.srcgod.slutthack.api.command.handler.handlers;
-
+/*
 import com.srcgod.slutthack.api.util.Minecraftable;
 import com.srcgod.slutthack.api.util.utils.MessageUtil;
 import net.minecraftforge.client.event.ClientChatEvent;
@@ -23,3 +23,6 @@ public class CommandHandler implements Minecraftable {
         }
     }
 }
+
+
+ */

@@ -69,4 +69,7 @@ public class KillAura extends Module {
 
             return new float[]{u2, u3};
         }
+        public void onDisable(){
+
+        }
     }

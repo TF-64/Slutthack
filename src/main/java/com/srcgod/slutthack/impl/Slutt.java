@@ -2,6 +2,8 @@ package com.srcgod.slutthack.impl;
 
 import com.srcgod.slutthack.api.clickgui.ClickGuiManager;
 import com.srcgod.slutthack.api.clickgui.SettingsManager;
+import com.srcgod.slutthack.api.menu.OnGuiOpenEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -10,7 +12,7 @@ import org.apache.logging.log4j.Logger;
 import org.lwjgl.opengl.Display;
 
 @Mod(modid = Slutt.MODID, name = Slutt.NAME, version = Slutt.VERSION)
-public class Slutt
+public class Slutt extends SettingsManager
 {
     public static final String MODID = "slut";
     public static final String NAME = "Slutthack";
@@ -33,10 +35,12 @@ public class Slutt
     public void init(FMLInitializationEvent event)
     {
         clickGui= new ClickGuiManager();
+        settingsManager = new SettingsManager();
         instance = this;
         settingsManager = new SettingsManager();
 
         Client.startup();
+        MinecraftForge.EVENT_BUS.register(new OnGuiOpenEvent());
 
     }
 

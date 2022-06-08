@@ -1,5 +1,5 @@
 package com.srcgod.slutthack.api.command;
-
+/*
 public abstract class Command {
     private final String name;
     private final String[] commands;
@@ -29,3 +29,5 @@ public abstract class Command {
     }
 
 }
+
+ */

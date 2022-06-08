@@ -1,5 +1,5 @@
 package com.srcgod.slutthack.api.command;
-
+/*
 import com.srcgod.slutthack.api.util.Minecraftable;
 import com.srcgod.slutthack.api.util.utils.MessageUtil;
 
@@ -85,3 +85,5 @@ public class CommandManager implements Minecraftable {
 
 
 }
+
+ */
